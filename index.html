@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StellarO</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="ui-center">
+        <!-- Overlapping floating glass tabs -->
+        <nav class="glass-tabs">
+            <button class="tab active" data-tab="stellar">StellarO</button>
+            <button class="tab" data-tab="settings" title="Settings"><span class="gear">&#9881;</span></button>
+        </nav>
+        <!-- Main Glass Box (bigger) -->
+        <div class="main-glass" id="glass-container">
+            <div class="tab-panel" id="stellar" style="display:block;">
+                <h1 class="site-title gradient-text">StellarO</h1>
+            </div>
+            <div class="tab-panel" id="settings">
+                <div class="settings-box">
+                    <h2 class="settings-title gradient-text">Settings</h2>
+                    <div class="setting-row">
+                        <label for="gradient-select"><strong>Gradient:</strong></label>
+                        <select id="gradient-select">
+                            <option value="bluepurple">Blue & Purple</option>
+                            <option value="sunset">Sunset</option>
+                            <option value="emerald">Emerald</option>
+                            <option value="darknight">Dark Night</option>
+                        </select>
+                    </div>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="toggle-glow" checked> Cursor Glow</label>
+                    </div>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="toggle-tilt" checked> Tilt 3D</label>
+                    </div>
+                    <div class="setting-row">
+                        <label><input type="checkbox" id="toggle-anim" checked> Animations</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resize-handle"></div>
+    <script src="main.js"></script>
+</body>
+</html>
